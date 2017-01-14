@@ -3,5 +3,9 @@ var test = (function(){
     return 'bar'
   }
   
+  function foo(){
+    return 'foo';
+  }
+  
   bar()
 }();
