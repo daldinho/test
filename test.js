@@ -1,11 +1,20 @@
 var test = (function(){
-  function bar(){
+  'use strict';
+  
+  var bar = function bar(){
     return 'bar'
   }
   
-  function foo(){
+  var foo = function foo(){
     return 'foo';
   }
   
-  bar()
+  return {
+    bar: function() {
+      bar();
+    },
+    foo: function() {
+      foo();
+    }
+  }
 }();
