@@ -1,4 +1,6 @@
 var test = (function(){
+  'use strict';
+  
   var bar = function bar(){
     return 'bar'
   }
